@@ -1,25 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import About from "./pages/About";
+import Blog from "./pages/Blog";
+import Game from "./pages/Game";
+import Home from "./pages/Home";
+
+import HTMLBlock from "./pages/Blog/HTMLBlock";
+import Javascript from "./pages/Blog/Javascript";
+import JavascriptQuestion from "./pages/Blog/JavascriptQuestion";
+import TodoList from "./pages/Blog/TodoList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/blog/todolist-by-react">
+            <TodoList />
+          </Route>
+          <Route path="/blog/mot-so-bai-tap-hay-ve-javascript">
+            <JavascriptQuestion />
+          </Route>
+          <Route path="/blog/Javascript">
+            <Javascript />
+          </Route>
+          <Route path="/blog/HTML-Block">
+            <HTMLBlock />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/game">
+            <Game />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
