@@ -91,10 +91,7 @@ export default class HTMLBlock extends Component {
         <br />
         <Slide left big delay={1000}>
           <div className="container">
-            <div
-              className="p-3 bg-TodoList rounded shadow"
-              style={{ marginLeft: 300, marginRight: 300 }}
-            >
+            <div className="p-3 bg-TodoList rounded shadow">
               <h4 className="text-white">DAILIST</h4>
               <br />
               <div className="input-group">

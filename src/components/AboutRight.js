@@ -11,7 +11,7 @@ export default function AboutRight() {
     <Slide right big delay={1000}>
       <div className="ml-3">
         <br /> <br />
-        <div className="d-flex justify-content-start mb-3">
+        <div className="d-flex mb-3">
           <img src={person} width="30" alt="" />
           <h4 className="text-danger ml-2" style={{ marginBottom: 0 }}>
             SUMMARIZE MYSELF
@@ -28,7 +28,7 @@ export default function AboutRight() {
             </li>
           </ul>
         </div>
-        <div className="d-flex justify-content-start mb-3">
+        <div className="d-flex mb-3">
           <img src={timeline} width="30" alt="" />
           <h4 className="text-danger ml-2" style={{ marginBottom: 0 }}>
             TIMELINE
@@ -98,7 +98,7 @@ export default function AboutRight() {
             <p>02/2019 - 05/2020</p>
           </div>
         </div>
-        <div className="d-flex justify-content-start mb-3">
+        <div className="d-flex mb-3">
           <img src={music} width="30" alt="" />
           <h4 className="text-danger ml-2" style={{ marginBottom: 0 }}>
             INTERESTS

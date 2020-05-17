@@ -100,10 +100,8 @@ export default class Blog extends Component {
                   key={index}
                 >
                   <div className="d-flex justify-content-left">
-                    <p style={{ marginLeft: 200 }}>{item.title}</p>
-                    <p className="ml-auto" style={{ marginRight: 200 }}>
-                      {item.date}
-                    </p>
+                    <p>{item.title}</p>
+                    <p className="ml-auto">{item.date}</p>
                   </div>
                 </Link>
               ))}
