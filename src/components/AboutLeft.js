@@ -32,7 +32,7 @@ export default function AboutLeft() {
 
         <div className="ml-3">
           <div className="d-flex mb-3">
-            <img src={birthday} width="20" alt="" className="mr-2" />
+            <img src={birthday} width="20" alt="" className="" />
             27/06/1990
           </div>
           <div className="d-flex mb-3">
