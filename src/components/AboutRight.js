@@ -12,10 +12,12 @@ export default function AboutRight() {
       <div className="ml-3">
         <br /> <br />
         <div className="row mb-3">
-          <img src={person} width="30" alt="" />
-          <h4 className="text-danger ml-2" style={{ marginBottom: 0 }}>
-            SUMMARIZE MYSELF
-          </h4>
+          <div className="col-12">
+            <img src={person} width="30" alt="" />
+            <h4 className="text-danger ml-2" style={{ marginBottom: 0 }}>
+              SUMMARIZE MYSELF
+            </h4>
+          </div>
         </div>
         <div>
           <ul>
