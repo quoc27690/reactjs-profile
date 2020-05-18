@@ -11,14 +11,10 @@ export default function AboutRight() {
     <Slide right big delay={1000}>
       <div className="ml-3">
         <br /> <br />
-        <div className="row mb-3">
-          <div className="col-12">
-            <img src={person} width="30" alt="" />
-            <h4 className="text-danger ml-2" style={{ marginBottom: 0 }}>
-              SUMMARIZE MYSELF
-            </h4>
-          </div>
-        </div>
+        <h4 className="text-danger">
+          <img src={person} width="30" alt="" />
+          SUMMARIZE MYSELF
+        </h4>
         <div>
           <ul>
             <li>Favorite what is related to programming.</li>
@@ -31,10 +27,12 @@ export default function AboutRight() {
           </ul>
         </div>
         <div className="row mb-3">
-          <img src={timeline} width="30" alt="" />
-          <h4 className="text-danger ml-2" style={{ marginBottom: 0 }}>
-            TIMELINE
-          </h4>
+          <div className="col-12">
+            <img src={timeline} width="30" alt="" />
+            <h4 className="text-danger ml-2" style={{ marginBottom: 0 }}>
+              TIMELINE
+            </h4>
+          </div>
         </div>
         <div className="row">
           <div style={{ width: 500 }}>
@@ -101,10 +99,12 @@ export default function AboutRight() {
           </div>
         </div>
         <div className="row mb-3">
-          <img src={music} width="30" alt="" />
-          <h4 className="text-danger ml-2" style={{ marginBottom: 0 }}>
-            INTERESTS
-          </h4>
+          <div className="col-12">
+            <img src={music} width="30" alt="" />
+            <h4 className="text-danger ml-2" style={{ marginBottom: 0 }}>
+              INTERESTS
+            </h4>
+          </div>
         </div>
         <div>
           <ul>
