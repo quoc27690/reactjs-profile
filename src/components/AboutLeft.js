@@ -12,14 +12,15 @@ export default function AboutLeft() {
   return (
     <Zoom delay={1000}>
       <div className="bg-left">
-        <div className="d-flex justify-content-center">
-          <img
-            src="https://res.cloudinary.com/depdygupn/image/upload/v1589533866/avatar_insta_yuvpvv.png"
-            width="190"
-            height="190"
-            className="mt-5 mb-3"
-            alt=""
-          />
+        <div className="row">
+          <div className="col-12 text-center">
+            <img
+              src="https://res.cloudinary.com/depdygupn/image/upload/v1589533866/avatar_insta_yuvpvv.png"
+              width="60%"
+              className="mt-5 mb-3"
+              alt=""
+            />
+          </div>
         </div>
 
         <div className="text-center">
