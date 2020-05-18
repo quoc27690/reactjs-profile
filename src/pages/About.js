@@ -10,10 +10,10 @@ export default function About() {
       <Header />
       <div className="container">
         <div className="row">
-          <div className="col-4">
+          <div className="col-sm-12 col-md-4">
             <AboutLeft />
           </div>
-          <div className="col-8">
+          <div className="col-sm-12 col-md-8">
             <AboutRight />
           </div>
         </div>
