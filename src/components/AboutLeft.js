@@ -30,24 +30,24 @@ export default function AboutLeft() {
         </div>
         <hr />
 
-        <div className="ml-3">
-          <div className="d-flex mb-3">
-            <img src={birthday} width="20" alt="" className="" />
+        <div className="row ml-3">
+          <div className="col-12 mb-3">
+            <img src={birthday} width="20" alt="" className="mr-2" />
             27/06/1990
           </div>
-          <div className="d-flex mb-3">
+          <div className="col-12 mb-3">
             <img src={gender} width="20" alt="" className="mr-2" />
             Male
           </div>
-          <div className="d-flex mb-3">
+          <div className="col-12 mb-3">
             <img src={phone} width="20" alt="" className="mr-2" />
             0772548486
           </div>
-          <div className="d-flex mb-3">
+          <div className="col-12 mb-3">
             <img src={email} width="20" alt="" className="mr-2" />
             quoc27690@ gmail.com
           </div>
-          <div className="d-flex mb-3">
+          <div className="col-12 mb-3">
             <img src={place} width="20" alt="" className="mr-2" />
             DaNang, VietNam
           </div>
