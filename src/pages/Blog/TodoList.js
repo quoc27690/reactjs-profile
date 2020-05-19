@@ -118,31 +118,36 @@ export default class HTMLBlock extends Component {
                   <p className="text-left" style={{ marginBottom: 0 }}>
                     UPCOMING
                   </p>
-                  {todoItems.length > 0 &&
-                    todoItems
-                      .filter((item) => !item.isComplete)
-                      .map((item, index) => (
-                        <div className="d-flex border-bottom" key={index}>
-                          <TodoItem item={item} onClick={this.onClick(item)} />
-                          <button
-                            type="button"
-                            className="close ml-auto"
-                            onClick={this.onCickX(item)}
-                          >
-                            &times;
-                          </button>
-                        </div>
-                      ))}
-                  {todoItems.filter((item) => !item.isComplete).length ===
-                    0 && (
-                    <div>
-                      <img
-                        src={empt}
-                        style={{ width: 200, height: 200 }}
-                        alt=""
-                      ></img>
-                    </div>
-                  )}
+                  <div>
+                    {todoItems.length > 0 &&
+                      todoItems
+                        .filter((item) => !item.isComplete)
+                        .map((item, index) => (
+                          <div className="d-flex border-bottom" key={index}>
+                            <TodoItem
+                              item={item}
+                              onClick={this.onClick(item)}
+                            />
+                            <button
+                              type="button"
+                              className="close ml-auto"
+                              onClick={this.onCickX(item)}
+                            >
+                              &times;
+                            </button>
+                          </div>
+                        ))}
+                    {todoItems.filter((item) => !item.isComplete).length ===
+                      0 && (
+                      <div>
+                        <img
+                          src={empt}
+                          style={{ width: 200, height: 200 }}
+                          alt=""
+                        ></img>
+                      </div>
+                    )}
+                  </div>
                 </div>
 
                 <div className="mt-3">

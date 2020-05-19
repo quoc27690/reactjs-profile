@@ -21,7 +21,7 @@ export default class TodoItem extends Component {
         style={{ paddingTop: 10, paddingBottom: 10, cursor: "pointer" }}
       >
         <img src={url} style={{ width: 20 }} alt="" />
-        <p style={{ marginBottom: 0, marginLeft: 10 }}>{item.title}</p>
+        <h5 style={{ marginBottom: 0, marginLeft: 10 }}>{item.title}</h5>
       </div>
     );
   }

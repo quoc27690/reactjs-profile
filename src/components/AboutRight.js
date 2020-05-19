@@ -86,7 +86,16 @@ export default function AboutRight() {
               <li>Html/Css</li>
               <li>Javascript/ES6</li>
               <li>UI Design</li>
-              <li>Node.js Web Server using Express</li>
+              <li>
+                <div>Node.js Web Server using Express</div>
+                <a
+                  href="https://nodejs-express-demo-quoc276.herokuapp.com/"
+                  target="blank"
+                  className="font-italic"
+                >
+                  (MyProject: UserAdmin:quoc@gmail.com - PassAdmin:123123)
+                </a>
+              </li>
               <li>React</li>
             </ul>
           </div>
