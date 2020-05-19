@@ -13,13 +13,7 @@ export default class HTMLBlock extends Component {
 
     this.state = {
       newItem: "",
-      todoItems: [
-        { title: "go swimming", isComplete: false },
-        { title: "playing football", isComplete: false },
-        { title: "go to work", isComplete: false },
-        { title: "playing game", isComplete: true },
-        { title: "playing tennis", isComplete: true },
-      ],
+      todoItems: [],
     };
   }
 
