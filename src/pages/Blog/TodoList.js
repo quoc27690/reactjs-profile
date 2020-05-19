@@ -156,13 +156,13 @@ export default class HTMLBlock extends Component {
                       .map((item, index) => (
                         <div className="d-flex border-bottom" key={index}>
                           <TodoItem item={item} onClick={this.onClick(item)} />
-                          <button
+                          {/* <button
                             type="button"
                             className="close ml-auto"
                             onClick={this.onCickX(item)}
                           >
                             &times;
-                          </button>
+                          </button> */}
                         </div>
                       ))}
                   {todoItems.filter((item) => item.isComplete).length === 0 && (
