@@ -15,13 +15,13 @@ export default class TodoItem extends Component {
     return (
       <div
         onClick={onClick}
-        className={classNames("d-flex", "TodoItem", {
+        className={classNames("TodoItem", {
           "TodoItem-complete": item.isComplete,
         })}
         style={{ paddingTop: 10, paddingBottom: 10, cursor: "pointer" }}
       >
-        <img src={url} style={{ width: 20 }} alt="" />
-        <h5 style={{ marginBottom: 0, marginLeft: 10 }}>{item.title}</h5>
+        <img src={url} style={{ width: 20 }} alt="" className="mr-2" />
+        {item.title}
       </div>
     );
   }
