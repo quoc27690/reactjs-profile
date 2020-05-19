@@ -40,6 +40,12 @@ export default class Blog extends Component {
           title: "TodoList by React",
           date: "Oct 14 2019",
         },
+        {
+          id: 5,
+          link: "/blog/money-exchange",
+          title: "Money Exchange",
+          date: "Nov 14 2019",
+        },
       ],
     };
   }

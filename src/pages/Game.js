@@ -81,7 +81,7 @@ export default class Game extends Component {
         playerHealth: playerHealth + heal,
       });
     } else {
-      return alert("Heal have to <= 50point !!!");
+      return alert("HP must be under 50 points !!!");
     }
   };
 
@@ -155,30 +155,44 @@ export default class Game extends Component {
                 </div>
               </div>
             </div>
-            <div className="controls mt-5">
+            <div className="controls mt-5 text-center">
               {gameIsRunning ? (
                 <Bounce>
-                  <div className="col">
-                    <button className="btn btn-info" onClick={this.acttack}>
-                      ATTACK
-                    </button>
-                    <button
-                      className="btn btn-danger"
-                      onClick={this.specialActtack}
-                    >
-                      SPECIAL ATTACK
-                    </button>
-                    <button className="btn btn-success" onClick={this.heal}>
-                      HEAL
-                    </button>
-                    <button className="btn btn-warning" onClick={this.giveUp}>
-                      GIVE UP
-                    </button>
+                  <div className="row">
+                    <div className="col">
+                      <div className="col mb-3">
+                        <button
+                          className="btn btn-info mr-3"
+                          onClick={this.acttack}
+                        >
+                          ATTACK
+                        </button>
+                        <button
+                          className="btn btn-danger"
+                          onClick={this.specialActtack}
+                        >
+                          SPECIAL ATTACK
+                        </button>
+                      </div>
+                      <div className="col">
+                        <button
+                          className="btn btn-success mr-3"
+                          onClick={this.heal}
+                        >
+                          HEAL
+                        </button>
+                        <button
+                          className="btn btn-warning"
+                          onClick={this.giveUp}
+                        >
+                          GIVE UP
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </Bounce>
               ) : (
                 <Bounce>
-                  {" "}
                   <div className="col">
                     <button
                       className="btn btn-primary"

@@ -11,12 +11,16 @@ import HTMLBlock from "./pages/Blog/HTMLBlock";
 import Javascript from "./pages/Blog/Javascript";
 import JavascriptQuestion from "./pages/Blog/JavascriptQuestion";
 import TodoList from "./pages/Blog/TodoList";
+import MoneyExchange from "./components/Blog/MoneyExchange";
 
 function App() {
   return (
     <Router>
       <div>
         <Switch>
+          <Route path="/blog/money-exchange">
+            <MoneyExchange />
+          </Route>
           <Route path="/blog/todolist-by-react">
             <TodoList />
           </Route>
