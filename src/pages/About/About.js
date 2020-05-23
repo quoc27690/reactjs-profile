@@ -1,8 +1,10 @@
 import React from "react";
 
-import Header from "../components/Header";
-import AboutLeft from "../components/AboutLeft";
-import AboutRight from "../components/AboutRight";
+import Header from "../../components/Header";
+import AboutLeft from "./AboutLeft";
+import AboutRight from "./AboutRight";
+
+import { Prompt } from "react-router-dom";
 
 export default function About() {
   return (
@@ -17,6 +19,7 @@ export default function About() {
             <AboutRight />
           </div>
         </div>
+        <Prompt when={true} message="Are you sure you want to leave?" />
       </div>
     </div>
   );

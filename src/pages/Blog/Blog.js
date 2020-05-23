@@ -1,12 +1,11 @@
 import React, { Component } from "react";
+import "animate.css";
 
-import Header from "../components/Header";
+import Header from "../../components/Header";
 
-import facebook from "../images/facebook.svg";
-import github from "../images/github.svg";
-import gmail from "../images/gmail.svg";
-
-import Zoom from "react-reveal/Zoom";
+import facebook from "../../images/facebook.svg";
+import github from "../../images/github.svg";
+import gmail from "../../images/gmail.svg";
 
 import { Link } from "react-router-dom";
 
@@ -18,31 +17,31 @@ export default class Blog extends Component {
       data: [
         {
           id: 1,
-          link: "/blog/HTML-Block",
+          slug: "html-block",
           title: "HTML Block",
           date: "Oct 10 2019",
         },
         {
           id: 2,
-          link: "/blog/JavaScript",
+          slug: "javaScript",
           title: "JavaScript thật sự là gì?",
           date: "Oct 10 2019",
         },
         {
           id: 3,
-          link: "/blog/mot-so-bai-tap-hay-ve-javascript",
+          slug: "mot-so-bai-tap-hay-ve-javascript",
           title: "Một số bài tập hay về Javascript",
           date: "Oct 14 2019",
         },
         {
           id: 4,
-          link: "/blog/todolist-by-react",
+          slug: "todolist-by-react",
           title: "TodoList by React",
           date: "Oct 14 2019",
         },
         {
           id: 5,
-          link: "/blog/money-exchange",
+          slug: "money-exchange",
           title: "Money Exchange",
           date: "Nov 14 2019",
         },
@@ -52,11 +51,15 @@ export default class Blog extends Component {
 
   render() {
     const { data } = this.state;
+    const { match } = this.props;
+    var url = match.url;
+
     return (
       <div>
         <Header />
-        <Zoom delay={1000}>
-          <div className="container text-center">
+
+        <div className="animate__animated animate__zoomIn">
+          <div className="container text-center ">
             <img
               src="https://res.cloudinary.com/depdygupn/image/upload/v1589533866/avatar_insta_yuvpvv.png"
               width="90"
@@ -101,7 +104,7 @@ export default class Blog extends Component {
               })
               .map((item, index) => (
                 <Link
-                  to={item.link}
+                  to={`${url}/${item.slug}`}
                   style={{ textDecoration: "none" }}
                   key={index}
                 >
@@ -112,7 +115,7 @@ export default class Blog extends Component {
                 </Link>
               ))}
           </div>
-        </Zoom>
+        </div>
       </div>
     );
   }

@@ -1,11 +1,10 @@
 import React, { Component } from "react";
+import "animate.css";
 
 import empt from "../../images/empt.svg";
 
 import Header from "../../components/Header";
 import TodoItem from "./TodoItem";
-
-import Slide from "react-reveal/Slide";
 
 export default class HTMLBlock extends Component {
   constructor(props) {
@@ -87,108 +86,107 @@ export default class HTMLBlock extends Component {
       <div>
         <Header />
         <br />
-        <Slide left big delay={1000}>
-          <div className="container">
-            <div className="col-12">
-              <div className="p-3 bg-TodoList rounded shadow">
-                <h4 className="text-white">DAILIST</h4>
-                <br />
-                <div className="input-group">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Add A New Item"
-                    value={newItem}
-                    onChange={this.onChange}
-                  />
-                  <div className="input-group-append">
-                    <button
-                      className="btn btn-outline-secondary"
-                      type="button"
-                      onClick={this.onAdd(newItem)}
-                    >
-                      Add
-                    </button>
-                  </div>
-                </div>
-
-                <div className="mt-3">
-                  <p className="text-left" style={{ marginBottom: 0 }}>
-                    UPCOMING
-                  </p>
-                  <div className="row">
-                    <div className="col">
-                      {todoItems.length > 0 &&
-                        todoItems
-                          .filter((item) => !item.isComplete)
-                          .map((item, index) => (
-                            <div className="d-flex border-bottom" key={index}>
-                              <TodoItem
-                                item={item}
-                                onClick={this.onClick(item)}
-                              />
-                              <button
-                                type="button"
-                                className="close ml-auto"
-                                onClick={this.onCickX(item)}
-                              >
-                                &times;
-                              </button>
-                            </div>
-                          ))}
-                      {todoItems.filter((item) => !item.isComplete).length ===
-                        0 && (
-                        <div>
-                          <img
-                            src={empt}
-                            style={{ width: 200, height: 200 }}
-                            alt=""
-                          ></img>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-3">
-                  <p className="text-left" style={{ marginBottom: 0 }}>
-                    FINISHED
-                  </p>
-                  {todoItems.length > 0 &&
-                    todoItems
-                      .filter((item) => item.isComplete)
-                      .map((item, index) => (
-                        <div className="d-flex border-bottom" key={index}>
-                          <TodoItem item={item} onClick={this.onClick(item)} />
-                          <button
-                            type="button"
-                            className="close ml-auto"
-                            onClick={this.onCickX(item)}
-                          >
-                            &times;
-                          </button>
-                        </div>
-                      ))}
-                  {todoItems.filter((item) => item.isComplete).length === 0 && (
-                    <div>
-                      <img
-                        src={empt}
-                        style={{ width: 200, height: 200 }}
-                        alt=""
-                      ></img>
-                    </div>
-                  )}
-                </div>
-
-                <small className="d-block text-right mt-3">
-                  <button className="btn btn-light" onClick={this.onUncheck}>
-                    All Uncheck
+        <div className="container animate__animated animate__zoomIn">
+          <div className="col-12">
+            <div className="p-3 bg-TodoList rounded shadow">
+              <h4 className="text-white">DAILIST</h4>
+              <br />
+              <div className="input-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Add A New Item"
+                  value={newItem}
+                  onChange={this.onChange}
+                />
+                <div className="input-group-append">
+                  <button
+                    className="btn btn-outline-secondary"
+                    type="button"
+                    onClick={this.onAdd(newItem)}
+                  >
+                    Add
                   </button>
-                </small>
+                </div>
               </div>
+
+              <div className="mt-3">
+                <p className="text-left" style={{ marginBottom: 0 }}>
+                  UPCOMING
+                </p>
+                <div className="row">
+                  <div className="col">
+                    {todoItems.length > 0 &&
+                      todoItems
+                        .filter((item) => !item.isComplete)
+                        .map((item, index) => (
+                          <div className="d-flex border-bottom" key={index}>
+                            <TodoItem
+                              item={item}
+                              onClick={this.onClick(item)}
+                            />
+                            <button
+                              type="button"
+                              className="close ml-auto"
+                              onClick={this.onCickX(item)}
+                            >
+                              &times;
+                            </button>
+                          </div>
+                        ))}
+                    {todoItems.filter((item) => !item.isComplete).length ===
+                      0 && (
+                      <div>
+                        <img
+                          src={empt}
+                          style={{ width: 200, height: 200 }}
+                          alt=""
+                        ></img>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-3">
+                <p className="text-left" style={{ marginBottom: 0 }}>
+                  FINISHED
+                </p>
+                {todoItems.length > 0 &&
+                  todoItems
+                    .filter((item) => item.isComplete)
+                    .map((item, index) => (
+                      <div className="d-flex border-bottom" key={index}>
+                        <TodoItem item={item} onClick={this.onClick(item)} />
+                        <button
+                          type="button"
+                          className="close ml-auto"
+                          onClick={this.onCickX(item)}
+                        >
+                          &times;
+                        </button>
+                      </div>
+                    ))}
+                {todoItems.filter((item) => item.isComplete).length === 0 && (
+                  <div>
+                    <img
+                      src={empt}
+                      style={{ width: 200, height: 200 }}
+                      alt=""
+                    ></img>
+                  </div>
+                )}
+              </div>
+
+              <small className="d-block text-right mt-3">
+                <button className="btn btn-light" onClick={this.onUncheck}>
+                  All Uncheck
+                </button>
+              </small>
             </div>
           </div>
-        </Slide>
+        </div>
+
         <br />
       </div>
     );

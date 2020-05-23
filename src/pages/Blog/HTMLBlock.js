@@ -1,8 +1,7 @@
 import React, { Component } from "react";
+import "animate.css";
 
 import Header from "../../components/Header";
-
-import Slide from "react-reveal/Slide";
 
 export default class HTMLBlock extends Component {
   constructor(props) {
@@ -83,53 +82,51 @@ export default class HTMLBlock extends Component {
     return (
       <div>
         <Header />
-        <Slide left big delay={1000}>
-          <div className="container">
-            <h1>HTML Block and Inline Elements</h1>
-            <hr />
-            <p>
-              Every HTML element has a default display value, depending on what
-              type of element it is. The two display values are: block and
-              inline.
-            </p>
-            <hr />
-            <h5>Block-level Elements</h5>
-            <p>
-              A block-level element always starts on a new line and takes up the
-              full width available (stretches out to the left and right as far
-              as it can).
-            </p>
-            <p>Block level elements in HTML:</p>
-            <div>
-              {block.map((item, index) => (
-                <a href="/blog/HTML-Block" key={index}>
-                  <span className="tagnamecolor">
-                    <span className="tagcolor">&lt;</span>
-                    {item}
-                    <span className="tagcolor">&gt;</span>
-                  </span>
-                </a>
-              ))}
-            </div>
-            <h5>Inline Elements</h5>
-            <p>
-              An inline element does not start on a new line and only takes up
-              as much width as necessary.
-            </p>
-            <p>Inline elements in HTML:</p>
-            <div>
-              {inline.map((item, index) => (
-                <a href="/blog/HTML-Block" key={index}>
-                  <span className="tagnamecolor">
-                    <span className="tagcolor">&lt;</span>
-                    {item}
-                    <span className="tagcolor">&gt;</span>
-                  </span>
-                </a>
-              ))}
-            </div>
+
+        <div className="container animate__animated animate__slideInLeft">
+          <h1>HTML Block and Inline Elements</h1>
+          <hr />
+          <p>
+            Every HTML element has a default display value, depending on what
+            type of element it is. The two display values are: block and inline.
+          </p>
+          <hr />
+          <h5>Block-level Elements</h5>
+          <p>
+            A block-level element always starts on a new line and takes up the
+            full width available (stretches out to the left and right as far as
+            it can).
+          </p>
+          <p>Block level elements in HTML:</p>
+          <div>
+            {block.map((item, index) => (
+              <a href="/blog/HTML-Block" key={index}>
+                <span className="tagnamecolor">
+                  <span className="tagcolor">&lt;</span>
+                  {item}
+                  <span className="tagcolor">&gt;</span>
+                </span>
+              </a>
+            ))}
           </div>
-        </Slide>
+          <h5>Inline Elements</h5>
+          <p>
+            An inline element does not start on a new line and only takes up as
+            much width as necessary.
+          </p>
+          <p>Inline elements in HTML:</p>
+          <div>
+            {inline.map((item, index) => (
+              <a href="/blog/HTML-Block" key={index}>
+                <span className="tagnamecolor">
+                  <span className="tagcolor">&lt;</span>
+                  {item}
+                  <span className="tagcolor">&gt;</span>
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
     );
   }
