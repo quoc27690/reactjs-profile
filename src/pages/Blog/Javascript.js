@@ -8,7 +8,7 @@ export default function Javascript() {
     <div>
       <Header />
 
-      <div className="container animate__animated animate__slideInLeft">
+      <div className="container animate__animated animate__slideInLeft mt-3">
         <h1>JavaScript thật sự là gì?</h1>
         <p>
           JavaScript (viết tắt là "js") là một ngôn ngữ lập trình mang đầy đủ

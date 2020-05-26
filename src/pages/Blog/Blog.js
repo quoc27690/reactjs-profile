@@ -45,6 +45,12 @@ export default class Blog extends Component {
           title: "Money Exchange",
           date: "Nov 14 2019",
         },
+        {
+          id: 6,
+          slug: "tutorial-how-to-deploy-a-production-react-app-to-heroku",
+          title: "Tutorial: how to deploy a production React app to Heroku",
+          date: "Jan 27 2020",
+        },
       ],
     };
   }

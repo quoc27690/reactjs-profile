@@ -1,11 +1,11 @@
 import React from "react";
 import "animate.css";
 
-import Header from "../components/Header";
+import Header from "../../components/Header";
 
-import facebook from "../images/facebook.svg";
-import github from "../images/github.svg";
-import gmail from "../images/gmail.svg";
+import facebook from "../../images/facebook.svg";
+import github from "../../images/github.svg";
+import gmail from "../../images/gmail.svg";
 
 import { Link } from "react-router-dom";
 
@@ -25,7 +25,7 @@ export default function Home() {
 
         <div>
           <h2>ANH QUOC</h2>
-          <h5 className="text-black-50">A Full Stack Web Developer</h5>
+          <h5 className="text-black-50">A Full Stack Developer</h5>
         </div>
 
         <div className="mt-5">

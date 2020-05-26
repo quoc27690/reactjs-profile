@@ -23,7 +23,9 @@ export default function AboutLeft() {
 
       <div className="text-center">
         <h4>LÂM ANH QUỐC</h4>
-        <p className="text-black-50 font-italic">FRESHER FRONT-END DEVELOPER</p>
+        <p className="text-black-50 font-italic">
+          INTERN/FRESHER FULL STACK DEVELOPER
+        </p>
       </div>
       <hr />
 

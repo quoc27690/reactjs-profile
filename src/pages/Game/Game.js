@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "animate.css";
 
-import hero from "../images/hero.svg";
-import monster from "../images/monster.svg";
+import hero from "../../images/hero.svg";
+import monster from "../../images/monster.svg";
 
-import Header from "../components/Header";
+import Header from "../../components/Header";
 
 export default class Game extends Component {
   constructor(props) {

@@ -86,15 +86,32 @@ export default function AboutRight() {
             <li>UI Design</li>
             <li>
               <div>Node.js Web Server using Express</div>
+              <div>
+                [Integrating: MongoDB, MongoDB Atlas, mongoose, Authentication,
+                RESTful API, Bootstrap 4, ...]
+              </div>
               <a
                 href="https://nodejs-express-demo-quoc276.herokuapp.com/"
                 target="blank"
                 className="font-italic"
               >
-                (MyProject: UserAdmin:quoc@gmail.com - PassAdmin:123123)
+                (My Project: Book Management)
               </a>
             </li>
-            <li>React</li>
+            <li>
+              <div>React</div>
+              <div>
+                [Integrating: React-Router, Redux, Redux-Thunk, RESTful API,
+                Bootstrap 4, ...]
+              </div>
+              <a
+                href="https://reactjs-pm-quoc276.herokuapp.com/"
+                target="blank"
+                className="font-italic"
+              >
+                (My Project: Product Management)
+              </a>
+            </li>
           </ul>
         </div>
         <div className="ml-auto mr-3">
