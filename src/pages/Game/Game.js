@@ -120,8 +120,8 @@ export default class Game extends Component {
         <div className="container animate__animated animate__zoomIn">
           <div className="row">
             <div className="col-6 text-center mt-5">
-              <h1 className="text-primary">YOU</h1>
-              <img src={hero} alt="" width="200" className="mt-3 mb-3" />
+              <h5 className="text-primary">YOU</h5>
+              <img src={hero} alt="" width="60%" className="mt-3 mb-3" />
               <div className="healthbar">
                 <div
                   className="healthbar heal"
@@ -137,8 +137,8 @@ export default class Game extends Component {
             </div>
 
             <div className="col-6 text-center mt-5">
-              <h1 className="text-primary">MONSTER</h1>
-              <img src={monster} alt="" width="200" className="mt-3 mb-3" />
+              <h5 className="text-primary">MONSTER</h5>
+              <img src={monster} alt="" width="60%" className="mt-3 mb-3" />
               <div className="healthbar">
                 <div
                   className="healthbar heal"

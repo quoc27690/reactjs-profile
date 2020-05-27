@@ -114,9 +114,17 @@ export default class Blog extends Component {
                   style={{ textDecoration: "none" }}
                   key={index}
                 >
-                  <div className="d-flex justify-content-left">
+                  {/* <div className="d-flex justify-content-left">
                     <p>{item.title}</p>
                     <p className="ml-auto">{item.date}</p>
+                  </div> */}
+                  <div className="row">
+                    <div className="col-8 text-left">
+                      <p>{item.title}</p>
+                    </div>
+                    <div className="col-4 text-right">
+                      <p>{item.date}</p>
+                    </div>
                   </div>
                 </Link>
               ))}
