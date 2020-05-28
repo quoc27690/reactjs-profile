@@ -95,7 +95,8 @@ export default function AboutRight() {
                 target="blank"
                 className="font-italic"
               >
-                (My Project: Book Management)
+                (My Project: Book Management <br />
+                https://nodejs-express-demo-quoc276.herokuapp.com/)
               </a>
             </li>
             <li>
@@ -109,7 +110,8 @@ export default function AboutRight() {
                 target="blank"
                 className="font-italic"
               >
-                (My Project: Product Management)
+                (My Project: Product Management <br />
+                https://reactjs-pm-quoc276.herokuapp.com/)
               </a>
             </li>
           </ul>
