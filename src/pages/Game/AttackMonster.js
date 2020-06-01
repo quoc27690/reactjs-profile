@@ -6,7 +6,7 @@ import monster from "../../images/monster.svg";
 
 import Header from "../../components/Header";
 
-export default class Game extends Component {
+export default class AttackMonster extends Component {
   constructor(props) {
     super(props);
 

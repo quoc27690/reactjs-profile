@@ -84,7 +84,7 @@ export default class HTMLBlock extends Component {
         <Header />
 
         <div className="container animate__animated animate__slideInLeft">
-          <h1>HTML Block and Inline Elements</h1>
+          <h3>HTML Block and Inline Elements</h3>
           <hr />
           <p>
             Every HTML element has a default display value, depending on what

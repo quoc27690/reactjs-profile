@@ -38,7 +38,7 @@ export default function MoneyExchange() {
       <Header />
 
       <div className="container mt-5 animate__animated animate__zoomIn">
-        <h1 className="text-center text-primary">Money Exchange</h1>
+        <h3 className="text-center text-primary">Money Exchange</h3>
         <br />
         <div className="row">
           <div className="col"></div>

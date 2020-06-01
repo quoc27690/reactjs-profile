@@ -9,7 +9,7 @@ import gmail from "../../images/gmail.svg";
 
 import { Link } from "react-router-dom";
 
-export default class Blog extends Component {
+export default class Game extends Component {
   constructor(props) {
     super(props);
 
@@ -17,39 +17,15 @@ export default class Blog extends Component {
       data: [
         {
           id: 1,
-          slug: "html-block",
-          title: "HTML Block",
-          date: "Oct 10 2019",
+          slug: "attack-monster",
+          title: "Attack Monster",
+          date: "Feb 10 2020",
         },
         {
           id: 2,
-          slug: "javaScript",
-          title: "JavaScript thật sự là gì?",
-          date: "Oct 10 2019",
-        },
-        {
-          id: 3,
-          slug: "mot-so-bai-tap-hay-ve-javascript",
-          title: "Một số bài tập hay về Javascript",
-          date: "Oct 14 2019",
-        },
-        {
-          id: 4,
-          slug: "todolist-by-react",
-          title: "TodoList by React",
-          date: "Oct 14 2019",
-        },
-        {
-          id: 5,
-          slug: "money-exchange",
-          title: "Money Exchange",
-          date: "Nov 14 2019",
-        },
-        {
-          id: 6,
-          slug: "tutorial-how-to-deploy-a-production-react-app-to-heroku",
-          title: "Tutorial: how to deploy a production React app to Heroku",
-          date: "Jan 27 2020",
+          slug: "smash-bricks",
+          title: "Smash Bricks",
+          date: "Mar 15 2020",
         },
       ],
     };
@@ -114,10 +90,6 @@ export default class Blog extends Component {
                   style={{ textDecoration: "none" }}
                   key={index}
                 >
-                  {/* <div className="d-flex justify-content-left">
-                    <p>{item.title}</p>
-                    <p className="ml-auto">{item.date}</p>
-                  </div> */}
                   <div className="row">
                     <div className="col-8 text-left">
                       <p>{item.title}</p>

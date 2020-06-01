@@ -22,6 +22,15 @@ export default function AboutRight() {
             In work and life are not afraid of challenges and difficulties.
             Always want to explore new things to cultivate yourself.
           </li>
+          <li>
+            <a
+              href="http://reactjs-profile-quoc276.herokuapp.com/"
+              target="blank"
+              className="font-italic"
+            >
+              (My Blog - http://reactjs-profile-quoc276.herokuapp.com/)
+            </a>
+          </li>
         </ul>
       </div>
       <h4 className="text-danger">
