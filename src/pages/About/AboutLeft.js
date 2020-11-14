@@ -9,7 +9,10 @@ import place from "../../images/place.svg";
 
 export default function AboutLeft() {
   return (
-    <div className="bg-left animate__animated animate__slideInLeft">
+    <div
+      className="bg-left animate__animated animate__slideInLeft"
+      style={{ height: "100%" }}
+    >
       <div className="row">
         <div className="col-12 text-center">
           <img

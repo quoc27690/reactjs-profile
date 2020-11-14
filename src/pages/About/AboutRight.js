@@ -55,14 +55,16 @@ export default function AboutRight() {
           </p>
           <p style={{ marginBottom: 0 }}>Infrastructure Engineer</p>
           <p>Design Bridge & Road by Software:</p>
+        </div>
+        <div className="col-4 d-flex justify-content-end">
+          <p>08/2013 - 11/2019</p>
+        </div>
+        <div className="col-12">
           <ul>
             <li>CiVil 3D - Revit</li>
             <li>Plaxis - Midas</li>
             <li>Autocad with AutoLisp (Javascript Language)</li>
           </ul>
-        </div>
-        <div className="col-4 d-flex justify-content-end">
-          <p>08/2013 - 11/2019</p>
         </div>
       </div>
       <div className="row ml-3">
@@ -70,14 +72,16 @@ export default function AboutRight() {
           <p className="font-weight-bold" style={{ marginBottom: 0 }}>
             JOINED REACT COURSES AT IMIC TECHNOLOGY
           </p>
+        </div>
+        <div className="col-4 d-flex justify-content-end">
+          <p>11/2019 - 02/2020</p>
+        </div>
+        <div className="col-12">
           <ul>
             <li>Html/Css - Javascript</li>
             <li>React - React Native</li>
             <li>Vue.js</li>
           </ul>
-        </div>
-        <div className="col-4 d-flex justify-content-end">
-          <p>11/2019 - 02/2020</p>
         </div>
       </div>
       <div className="row ml-3">
@@ -85,6 +89,11 @@ export default function AboutRight() {
           <p className="font-weight-bold" style={{ marginBottom: 0 }}>
             JOINED CODERSX 2020 AT CODERSX
           </p>
+        </div>
+        <div className="col-4 d-flex justify-content-end">
+          <p>02/2019 - 07/2020</p>
+        </div>
+        <div className="col-12">
           <ul>
             <li>Html/Css - Javascript/ES6 - UI Design</li>
             <li>
@@ -107,16 +116,20 @@ export default function AboutRight() {
             </li>
           </ul>
         </div>
-        <div className="col-4 d-flex justify-content-end">
-          <p>02/2019 - 07/2020</p>
-        </div>
       </div>
       <div className="row ml-3">
         <div className="col-8">
           <p className="font-weight-bold" style={{ marginBottom: 0 }}>
             SUN* INC.
           </p>
-          <p>Training through mini projects</p>
+        </div>
+        <div className="col-4 d-flex justify-content-end">
+          <p>07/2019 - Now</p>
+        </div>
+        <div className="col-12">
+          <p className="mb-0 font-italic">Training through mini projects</p>
+        </div>
+        <div className="col-12">
           <ul>
             <li>
               Html/Css <br />
@@ -158,17 +171,33 @@ export default function AboutRight() {
               </a>
             </li>
             <li>
-              React (React-Router, Redux-Toolkit, Redux-Thunk, RESTful API, ...)
+              React (React-Router, Redux-Toolkit, Redux-Thunk, Authentication,
+              RESTful API, I18n, ...)
               <br />
               <a href="https://quoc276-cart.herokuapp.com" target="blank">
                 https://quoc276-cart.herokuapp.com
               </a>
+              <br />
+              <a href="https://quoc276-movie.herokuapp.com/" target="blank">
+                https://quoc276-movie.herokuapp.com
+              </a>
             </li>
-            <li>Experience working in an Agile/Scrum development process.</li>
           </ul>
         </div>
-        <div className="col-4 d-flex justify-content-end">
-          <p>07/2019 - Now</p>
+        <div className="col-12">
+          <p className="mb-0 font-italic">
+            Joined real project: Human resource management projects in an
+            organization.
+          </p>
+        </div>
+        <div className="col-12">
+          <ul>
+            <li>
+              Analysis and design UI/UX, Handing the Client-side logic, Optimize
+              code, Bug Fixing
+            </li>
+            <li>Working in an Agile/Scrum development process.</li>
+          </ul>
         </div>
       </div>
       <h4 className="text-danger">
@@ -177,9 +206,7 @@ export default function AboutRight() {
       </h4>
       <div>
         <ul>
-          <li>Playing tennis</li>
-          <li>Listening to music</li>
-          <li>Reading book</li>
+          <li>Playing tennis, Listening to music and Reading book</li>
         </ul>
       </div>
     </div>
