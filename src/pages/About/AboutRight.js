@@ -91,7 +91,7 @@ export default function AboutRight() {
           </p>
         </div>
         <div className="col-4 d-flex justify-content-end">
-          <p>02/2019 - 07/2020</p>
+          <p>02/2020 - 07/2020</p>
         </div>
         <div className="col-12">
           <ul>
@@ -124,7 +124,7 @@ export default function AboutRight() {
           </p>
         </div>
         <div className="col-4 d-flex justify-content-end">
-          <p>07/2019 - Now</p>
+          <p>07/2020 - Now</p>
         </div>
         <div className="col-12">
           <p className="mb-0 font-italic">Training through mini projects</p>
