@@ -26,7 +26,7 @@ export default function AboutLeft() {
 
       <div className="text-center">
         <h4>LÂM ANH QUỐC</h4>
-        <p className="text-black-50 font-italic">JUNIOR FULL STACK DEVELOPER</p>
+        <p className="text-black-50 font-italic">JUNIOR FRONT END DEVELOPER</p>
       </div>
       <hr />
 
@@ -56,7 +56,7 @@ export default function AboutLeft() {
 
       <div className="ml-3">
         <h5 className="text-success mb-3">OBJECTIVE</h5>
-        <p className="font-weight-bold">Senior Front-end Developer</p>
+        <p className="font-weight-bold">Senior Front End Developer</p>
       </div>
       <hr />
 

@@ -57,7 +57,7 @@ export default function AboutRight() {
           <p>Design Bridge & Road by Software:</p>
         </div>
         <div className="col-4 d-flex justify-content-end">
-          <p>08/2013 - 11/2019</p>
+          <p>08/2013 - 05/2019</p>
         </div>
         <div className="col-12">
           <ul>
@@ -74,7 +74,7 @@ export default function AboutRight() {
           </p>
         </div>
         <div className="col-4 d-flex justify-content-end">
-          <p>11/2019 - 02/2020</p>
+          <p>05/2019 - 10/2019</p>
         </div>
         <div className="col-12">
           <ul>
@@ -91,7 +91,7 @@ export default function AboutRight() {
           </p>
         </div>
         <div className="col-4 d-flex justify-content-end">
-          <p>02/2020 - 07/2020</p>
+          <p>10/2019 - 04/2020</p>
         </div>
         <div className="col-12">
           <ul>
@@ -124,7 +124,7 @@ export default function AboutRight() {
           </p>
         </div>
         <div className="col-4 d-flex justify-content-end">
-          <p>07/2020 - Now</p>
+          <p>04/2020 - 12/2020</p>
         </div>
         <div className="col-12">
           <p className="mb-0 font-italic">Training through mini projects</p>
@@ -194,6 +194,30 @@ export default function AboutRight() {
           <ul>
             <li>
               Analysis and design UI/UX, Handing the Client-side logic, Optimize
+              code, Bug Fixing
+            </li>
+            <li>Working in an Agile/Scrum development process.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="row ml-3">
+        <div className="col-8">
+          <p className="font-weight-bold" style={{ marginBottom: 0 }}>
+            TPS INC.
+          </p>
+        </div>
+        <div className="col-4 d-flex justify-content-end">
+          <p>12/2020 - Now</p>
+        </div>
+        <div className="col-12">
+          <p className="mb-0 font-italic">
+            Joined real project: Driver management - FE: Reactjs, BE: Nodejs 
+          </p>
+        </div>
+        <div className="col-12">
+          <ul>
+            <li>
+              Analysis and design UI/UX, Handing the SSR logic, Optimize
               code, Bug Fixing
             </li>
             <li>Working in an Agile/Scrum development process.</li>
